@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <h3>Formular înscriere</h3>
-      <div>{mockData}</div>
+      <div className='text'>{mockData}</div>
       {!signatureMode ? (
         <button className={'button'} onClick={handleSignatureClick}>
           Accept and sign

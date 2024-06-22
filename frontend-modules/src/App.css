@@ -51,6 +51,11 @@
 
 .button {
   border: 1px solid black;
+  background-color: rgba(0, 0, 255, 0.192);
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 255, 0.377);
 }
 
 .form {
@@ -65,7 +70,7 @@
 }
 
 #buttonClear:hover {
-  background-color: rgba(255, 0, 0, 0.349);
+  background-color: rgba(255, 0, 0, 0.432);
 }
 
 #buttonProceed {
@@ -74,4 +79,11 @@
 
 #buttonProceed:hover {
   background-color: rgba(0, 255, 21, 0.425);
+}
+
+.text {
+  position: relative;
+  max-width: 60%;
+  left: 50%;
+  transform: translate(-50%);
 }
