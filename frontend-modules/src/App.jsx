@@ -2,6 +2,7 @@ import './App.css';
 import SignatureCanvas from 'react-signature-canvas';
 import mockData from './mock-data';
 import { useState, useRef } from 'react';
+import { NavBar } from './containers/NavBar/NavBar';
 
 function App() {
   const [signatureMode, setSignatureMode] = useState(false);
@@ -25,16 +26,15 @@ function App() {
       );
     }
   }
-  return (
-    <>
-      <h3>Formular înscriere</h3>
+
+  return <NavBar />;
+  /* <h3>Formular înscriere</h3>
       <div className='text'>{mockData}</div>
       {!signatureMode ? (
         <button className={'button'} onClick={handleSignatureClick}>
           Accept and sign
         </button>
       ) : null}
-
       {signatureMode ? (
         <form className='form'>
           <div className='formFirstRow'>
@@ -80,9 +80,7 @@ function App() {
       ) : null}
       <div>
         <img src={trimmedCanvas} />
-      </div>
-    </>
-  );
+      </div> */
 }
 
 export default App;
