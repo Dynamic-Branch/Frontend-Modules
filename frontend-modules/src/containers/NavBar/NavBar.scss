@@ -1,48 +1,24 @@
-.collapsedSideBar {
-    padding-top: 5vh;
+.sideBar {
+    padding-top: 1em;
     display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 10% 10% 10% 60% ;
-    width: 5vw;
+    grid-template-rows: 10% 10% 10% 60%;
     height: 100%;
-    background-color: #333;
     position: fixed;
     top: 0;
     left: 0;
-    background: rgb(55,77,153);
-    background: linear-gradient(180deg,  rgba(163,80,210,1) 18% , rgba(55,77,153,1) 66%);
+    background: linear-gradient(180deg, rgba(163, 80, 210, 1) 18%, rgba(55, 77, 153, 1) 66%);
     box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
-    align-items: center;
-    animation: closeBar 0.3s;
-    min-width:20px;
+    transition: width 0.3s ease-in-out; 
+    min-width: 3em;
+}
+
+
+.collapsedSideBar {
+    width: 3em;
 }
 
 .openSideBar {
-    padding-top: 5vh;
-        display: grid;
-        grid-template-columns: 1fr; 
-        grid-template-rows: 10% 10% 10% 60% ;
-        width: 15vw;
-        height: 100%;
-        background-color: #333;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background: rgb(55,77,153);
-        background: linear-gradient(180deg,  rgba(163,80,210,1) 18% , rgba(55,77,153,1) 66%);
-        box-shadow: 3px 0 10px rgba(0, 0, 0, 0.15);
-        align-items: center;
-        animation: openBar 0.3s;
-    }
-
-@keyframes openBar {
-    from {width:5vw;}
-    to {width:15vw;}
-}
-
-@keyframes closeBar {
-    from {width:15vw;}
-    to {width:5vw;}
+    width: 10rem;
 }
 
 

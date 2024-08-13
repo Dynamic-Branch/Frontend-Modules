@@ -29,7 +29,9 @@ export function NavBar() {
   }
   return (
     <div
-      className={openSideBar ? 'openSideBar' : 'collapsedSideBar'}
+      className={
+        openSideBar ? 'sideBar openSideBar' : 'sideBar collapsedSideBar'
+      }
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
