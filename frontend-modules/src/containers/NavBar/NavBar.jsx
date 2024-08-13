@@ -1,28 +1,25 @@
 import './NavBar.scss';
 import { useState } from 'react';
 import { NavBarItems } from '../../components/NavBarItems/NavBarItems';
+import { House, Mail, MapPinCheckInside } from 'lucide-react';
 
 export function NavBar() {
   const [openSideBar, setOpenSideBar] = useState(false);
   const navBarItems = [
     {
       title: 'Home',
-      icon: 'd:WorkDynamic BranchFrontend-Modules\frontend-modulesassetsimageshome_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg',
-    },
-    {
-      title: 'About',
-      icon: 'A',
+      icon: <House />,
     },
     {
       title: 'Programări',
-      icon: 'P',
+      icon: <MapPinCheckInside />,
     },
     {
       title: 'Contact',
-      icon: 'C',
+      icon: <Mail />,
     },
   ];
-  console.log(navBarItems);
+
   function onMouseEnter() {
     setOpenSideBar(true);
   }
@@ -37,7 +34,7 @@ export function NavBar() {
       onMouseLeave={onMouseLeave}
     >
       {navBarItems.map((elem, index) => (
-        <NavBarItems key={index} content={elem.icon} />
+        <NavBarItems key={index} content={elem} isSideBarOpen={openSideBar} />
       ))}
     </div>
   );
