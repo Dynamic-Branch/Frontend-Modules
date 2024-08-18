@@ -9,3 +9,11 @@
 
 If you receive the `ENOENT` error, it means there's a location issue. 
 Make sure to close VSCode and reopen it in the folder called frontend-modules. 
+
+**Until the final routing of the components, they are split on different branches based on their JIRA stories as following:**
+ - 'SCRUM-1' - the Sidebar
+ - `SCRUM-2` - the Signature Pad
+ - `SCRUM-3` - the Calendar/Scheduler
+
+Repeat the `npm run dev` command for each branch to execute.
+ 
