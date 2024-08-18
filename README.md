@@ -1,10 +1,10 @@
 
 **How to start the app**
 
-- clone the repo using `git clone`
+- Clone the repo using `git clone`
 - cd frontend-modules (to open the project's folder)
-- run `npm install` in the terminal to install node_modules
-- run `npm run dev` to start the app
+- Run `npm install` in the terminal to install node_modules
+- Run `npm run dev` to start the app
 - ctrl+click on the link to open the app in the browser (http://localhost:5137/)
 
 If you receive the `ENOENT` error, it means there's a location issue. 
