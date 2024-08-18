@@ -27,8 +27,9 @@ function App() {
     }
   }
 
-  return <NavBar />;
-  /* <h3>Formular înscriere</h3>
+  return (
+    <>
+      <h3>Formular înscriere</h3>
       <div className='text'>{mockData}</div>
       {!signatureMode ? (
         <button className={'button'} onClick={handleSignatureClick}>
@@ -80,7 +81,9 @@ function App() {
       ) : null}
       <div>
         <img src={trimmedCanvas} />
-      </div> */
+      </div>
+    </>
+  );
 }
 
 export default App;
